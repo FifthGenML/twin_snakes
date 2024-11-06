@@ -14,11 +14,14 @@ By default, this code runs using the default timber_wolf image, but is setup to 
 
 ```bash
 pip install -r requirements.txt
+```bash
+
 
 ## Setup
 ```bash
 chmod +x setup.sh
 ./setup.sh
+
 
 ## Running
 ```bash
