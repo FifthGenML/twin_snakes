@@ -1,13 +1,12 @@
-
-import io
-import base64
-from PIL import Image
 import requests
+import base64
+import io
+from PIL import Image
 import numpy as np
-from src.utils import score,query
+from src.utils import score
 
 def get_prediction_probs(image_np):
-    # Convert numpy array to image
+
     image = Image.fromarray(image_np.astype(np.uint8))
     buffered = io.BytesIO()
     image.save(buffered, format="PNG")
